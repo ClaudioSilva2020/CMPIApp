@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Pendulo.iml" filepath="$PROJECT_DIR$/Pendulo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CMPIApp.iml" filepath="$PROJECT_DIR$/CMPIApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

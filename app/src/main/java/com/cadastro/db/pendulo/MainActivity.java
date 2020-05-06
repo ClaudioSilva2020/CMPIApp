@@ -15,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
     }
     //Rotina do botão para as setas
     public void TelaSetas(View view) {
-        Intent it1 = new Intent(this, Layout_Setas.class);
+        Intent it1 = new Intent(this, layoutSetas.class);
         startActivity(it1);
     }
+
 }

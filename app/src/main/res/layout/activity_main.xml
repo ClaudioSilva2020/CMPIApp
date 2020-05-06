@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,31 +7,45 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
-    tools:context="com.cadastro.db.pendulo.MainActivity"
-    android:weightSum="1">
-    <Button
-        android:id="@+id/buton_setas"
-        android:text="SETAS"
-        android:layout_width="match_parent"
-        android:onClick="TelaSetas"
+    tools:context="com.cadastro.db.pendulo.Layout_Setas"
+    android:background="#111cb4">
+
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="0.26"
-        android:textSize="25dp"
-        android:theme="@style/Base.DialogWindowTitle.AppCompat" />
-    <Button
-        android:text="Esqurda"
-        android:layout_width="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Controle do Pêndulo"
+        android:id="@+id/textName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="0.26" />
-    <Button
-        android:text="Direita"
-        android:layout_width="match_parent"
+        android:text="V 1.0"
+        android:id="@+id/textVersion"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textBy"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="0.26" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Feito por Cláudio"
+        android:id="@+id/textBy"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
     <Button
-        android:text="Ré"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="0.26"/>
-</LinearLayout>
+        android:text="Iniciar"
+        android:id="@+id/buttonBegin"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="82dp" />
+</RelativeLayout>
